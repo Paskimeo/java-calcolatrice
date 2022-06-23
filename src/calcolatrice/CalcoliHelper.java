@@ -60,4 +60,65 @@ public class CalcoliHelper
 		}
 		
 	}
+	
+	
+	
+	
+	//BONUS 1 BONUS 1 BONUS 1 BONUS 1
+	
+	//cambio del variabile da INT a DOUBLE, tramite l'utilizzo dell'OVERLOADING
+	
+	public static double somma(double a, double b) 
+		{
+
+			return a+b;
+		}
+		
+		// sottrazione double
+		public static double differenza(double a, double b) 
+		{
+
+			return a-b;
+		}
+		
+		//moltiplicazione double
+		public static double moltiplicazione(double a, double b) 
+		{
+
+			return a*b;
+		}
+		
+		//valore assoluto double
+		public static double valoreAssoluto(double a) 
+		{
+			if(a<0) {
+				return -a;
+			}else {
+				return a;
+			}
+			
+		}
+		
+		//valore minore tra 2 valore "double"
+		public static double valoreMinore(double a, double b) 
+		{
+			if(a<b) {
+				return a;
+			}else {
+				return b;
+			}
+			
+		}
+		//valore maggiore tra 2 valore "double"
+		public static double valoreMaggiore(double a, double b) 
+		{
+			if(a>b) {
+				return a;
+			}else {
+				return b;
+			}
+			
+		}
+		
+	
 }
