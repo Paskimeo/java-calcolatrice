@@ -5,7 +5,7 @@ public class CalcoliTest {
 	public static void main(String[] args) {
 	
 
-		  System.out.println(CalcoliHelper.potenza(5, 4));
+		  System.out.println(CalcoliHelper.power(-2, -2));
 		  
 		 
 	}

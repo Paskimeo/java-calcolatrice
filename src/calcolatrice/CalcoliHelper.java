@@ -123,34 +123,32 @@ public class CalcoliHelper
 		
 		//BONUS 2 BONUS 2 BONUS 2 BONUS 2 BONUS 2
 		
-		 public static int potenza(int base, int esponente)
-		    {
-		        int temp;
-		        
-		        if (esponente == 0) 
-		        {
-		            return 1;
-		        }
-		        
-		        if (base == 0) 
-		        {
-		            return 1;
-		        }
-		        
-		        
-		        temp = potenza(base, esponente / 2);
-		  
-		        if (esponente % 2 == 0) {
-		        	 return temp * temp;
-		        }
-		           
-		        
-		        if (esponente > 0) {
-		        	 return base * temp * temp;
-		        } else
-			         return (temp * temp) / base;
-		     
-		             
-		        
-		    }
+		public static double power(int base, int exponent)
+		{
+			double result = base;
+			boolean expIsNegative = false;	//Segnala se l'esponente è positivo o negativo
+			
+			for (int i=1; i<CalcoliHelper.valoreAssoluto(exponent); i++)
+			{
+				if(exponent > 0)
+				{
+					result *= base;
+				}
+				else if(exponent < 0)
+				{
+					result *= base;
+					expIsNegative = true;
+				}
+				else
+				{
+					result = 1;
+				}
+			}
+			
+			if(expIsNegative)
+			{
+				result = 1 / result;
+			}
+			return result;
+		}
 }
