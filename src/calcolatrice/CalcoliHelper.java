@@ -120,5 +120,37 @@ public class CalcoliHelper
 			
 		}
 		
-	
+		
+		//BONUS 2 BONUS 2 BONUS 2 BONUS 2 BONUS 2
+		
+		 public static int potenza(int base, int esponente)
+		    {
+		        int temp;
+		        
+		        if (esponente == 0) 
+		        {
+		            return 1;
+		        }
+		        
+		        if (base == 0) 
+		        {
+		            return 1;
+		        }
+		        
+		        
+		        temp = potenza(base, esponente / 2);
+		  
+		        if (esponente % 2 == 0) {
+		        	 return temp * temp;
+		        }
+		           
+		        
+		        if (esponente > 0) {
+		        	 return base * temp * temp;
+		        } else
+			         return (temp * temp) / base;
+		     
+		             
+		        
+		    }
 }
